@@ -20,7 +20,7 @@ api = TdxHq_API()
 之后，通常是如下的格式
 
 ```
-if api.connect(&amp;apos;119.147.212.81&amp;apos;, 7709):
+if api.connect(119.147.212.81, 7709):
     # ... same codes...
     api.disconnect()
 
@@ -29,7 +29,7 @@ if api.connect(&amp;apos;119.147.212.81&amp;apos;, 7709):
 当然，我们也支持with 语法,可以省略`disconnect()`语句
 
 ```
-with api.connect(&amp;apos;119.147.212.81&amp;apos;, 7709):
+with api.connect(119.147.212.81, 7709):
     # some codes
 
 ```
@@ -71,11 +71,16 @@ api.get_security_quotes([(0, &amp;apos;000001&amp;apos;), (1, &amp;apos;600300&a
 
 <li>category-&gt;
 <pre><code>K线种类
-0 5分钟K线 1 15分钟K线 2 30分钟K线 3 1小时K线 4 日K线
+0 5分钟K线 
+1 15分钟K线 
+2 30分钟K线 
+3 1小时K线 
+4 日K线
 5 周K线
 6 月K线
 7 1分钟
-8 1分钟K线 9 日K线
+8 1分钟K线 
+9 日K线
 10 季K线
 11 年K线
 </code></pre></li>
